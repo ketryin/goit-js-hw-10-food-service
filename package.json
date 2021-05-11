@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ketryin/goit-js-hw-10-food-service.git"
+     "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
   "author": "Kateryna Kraieva <ketryin@ukr.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ketryin/goit-js-hw-10-food-service/issues"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
