@@ -2344,7 +2344,10 @@ if (localStorage.getItem(THEME_KEY) === null) {
   body.classList.add(localStorage.getItem(THEME_KEY));
 } else {
   body.classList.add(localStorage.getItem(THEME_KEY));
-  if (localStorage.getItem(THEME_KEY) === Theme.DARK) checkboxEl.setAttribute('checked', 'false');
+
+  if (localStorage.getItem(THEME_KEY) === Theme.DARK) {
+    checkboxEl.checked = true;
+  }
 }
 
 checkboxEl.addEventListener('change', themeSwitch);
@@ -2386,7 +2389,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51812" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54526" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
