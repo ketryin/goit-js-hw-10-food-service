@@ -22,8 +22,10 @@ if (localStorage.getItem(THEME_KEY) === null) {
 } else {
     body.classList.add(localStorage.getItem(THEME_KEY));
     
-    if (localStorage.getItem(THEME_KEY) === Theme.DARK)
-    checkboxEl.setAttribute('checked', 'false');
+    if (localStorage.getItem(THEME_KEY) === Theme.DARK) {
+      checkboxEl.checked=true;  
+    }
+    
 }
 
 checkboxEl.addEventListener('change', themeSwitch);
